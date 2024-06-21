@@ -1,0 +1,14 @@
+.hidden {
+    display: none;
+}
+
+#xp-bar-container {
+    width: 100%;
+    background-color: grey;
+}
+
+#xp-bar {
+    width: 0;
+    height: 20px;
+    background-color: green;
+}

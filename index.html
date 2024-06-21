@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypixel Skyblock Clone</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Hypixel Skyblock Clone</h1>
+    <div id="player-status">
+        <p>Naam: <span id="player-name"></span></p>
+        <p>Level: <span id="player-level"></span></p>
+        <p>Health: <span id="player-health"></span></p>
+        <p>Coins: <span id="player-coins"></span></p>
+        <div id="xp-bar-container">
+            <div id="xp-bar"></div>
+        </div>
+    </div>
+    <button id="gain-xp">Gain XP</button>
+    <button id="gain-coins">Gain Coins</button>
+
+    <button id="open-auction-house">Veilinghuis</button>
+    <div id="auction-house" class="hidden">
+        <h2>Veilinghuis</h2>
+        <ul id="auction-list"></ul>
+        <form id="add-item-form">
+            <input type="text" id="item-name" placeholder="Item Naam" required>
+            <input type="number" id="starting-bid" placeholder="Start Bod" required>
+            <input type="text" id="item-rarity" placeholder="Zeldzaamheid" required>
+            <button type="submit">Voeg Item Toe</button>
+        </form>
+        <button id="add-random-item">Voeg Random Item Toe</button>
+    </div>
+
+    <button id="open-inventory">Inventaris</button>
+    <div id="inventory" class="hidden">
+        <h2>Inventaris</h2>
+        <ul id="inventory-list"></ul>
+    </div>
+
+    <form id="craft-item-form">
+        <input type="text" id="craft-item-name" placeholder="Craft Item Naam" required>
+        <button type="submit">Craft Item</button>
+    </form>
+
+    <button id="save-game">Save Game</button>
+    <button id="load-game">Load Game</button>
+
+    <button id="start-dungeon">Start Dungeon</button>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
